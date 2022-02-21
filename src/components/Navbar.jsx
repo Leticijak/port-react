@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import { HiMenuAlt4, HiX } from "react-icons/hi"
+import { FaBars, FaRegWindowClose } from "react-icons/fa"
+import { AiOutlineBars } from "react-icons/ai"
 import { motion } from "framer-motion"
 
 import { images } from "../constants"
@@ -13,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <img src={images.logo} alt='logo' />
+        <img src={images.myLogo} alt='logo' />
       </div>
       <ul className='app__navbar-links'>
         {["home", "about", "work", "skills", "contact"].map((item) => (
@@ -25,14 +27,14 @@ const Navbar = () => {
       </ul>
 
       <div className='app__navbar-menu'>
-        <HiMenuAlt4 onClick={handleClick} />
+        <FaBars onClick={handleClick} color='#313bac' />
 
         {toggle && (
           <motion.div
             whileInView={{ x: [400, 0] }}
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
-            <HiX onClick={handleClick} />
+            <FaRegWindowClose onClick={handleClick} />
             <ul>
               {["home", "about", "work", "skills", "contact"].map((item) => (
                 <li key={item}>

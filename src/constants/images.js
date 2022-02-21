@@ -26,6 +26,7 @@ import about04 from "../assets/about04.png"
 import profile from "../assets/profile.png"
 import circle from "../assets/circle.svg"
 import logo from "../assets/logo.png"
+import myLogo from "../assets/original.png"
 
 import adidas from "../assets/adidas.png"
 import amazon from "../assets/amazon.png"
@@ -34,8 +35,10 @@ import bolt from "../assets/bolt.png"
 import nb from "../assets/nb.png"
 import skype from "../assets/skype.png"
 import spotify from "../assets/spotify.png"
+import hero from "../assets/coding1.webp"
 
 export const IMAGES = {
+  hero,
   email,
   mobile,
   api,
@@ -69,5 +72,6 @@ export const IMAGES = {
   nb,
   skype,
   spotify,
+  myLogo,
 }
 export default IMAGES
