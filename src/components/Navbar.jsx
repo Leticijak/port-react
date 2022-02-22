@@ -10,7 +10,7 @@ import "./Navbar.scss"
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
-  const handleClick = () => setToggle((prev) => !prev)
+  const handleToggle = () => setToggle((prev) => !prev)
 
   return (
     <nav className='app__navbar'>
@@ -27,18 +27,18 @@ const Navbar = () => {
       </ul>
 
       <div className='app__navbar-menu'>
-        <FaBars onClick={handleClick} color='#313bac' />
+        <FaBars onClick={handleToggle} color='#313bac' />
 
         {toggle && (
           <motion.div
             whileInView={{ x: [400, 0] }}
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
-            <FaRegWindowClose onClick={handleClick} />
+            <FaRegWindowClose onClick={handleToggle} />
             <ul>
               {["home", "about", "work", "skills", "contact"].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`} onClick={handleClick}>
+                  <a href={`#${item}`} onClick={handleToggle}>
                     {item}
                   </a>
                 </li>
