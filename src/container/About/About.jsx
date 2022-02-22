@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 
 import { urlFor, client } from "../../client"
 import AppWrap from "../../wrapper/AppWrap"
+import MotionWrap from "../../wrapper/MotionWrap"
 
 const About = () => {
   const [abouts, setAbouts] = useState([])
