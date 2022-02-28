@@ -21,7 +21,7 @@ const Header = () => {
       {/* 1 */}
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.2 }}
         className='app__header-info'
       >
         <div className='app__header-badge'>
@@ -39,7 +39,7 @@ const Header = () => {
       {/* 2 */}
       <motion.div
         whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        transition={{ duration: 0.2, delayChildren: 0.5 }}
         className='app__header-img'
       >
         <img src={images.hero} alt='profile bg' />

@@ -71,7 +71,7 @@ const Testimonial = () => {
         {brands.map((br) => (
           <motion.div
             whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 0.5, type: "tween" }}
+            transition={{ duration: 0.2, type: "tween" }}
             key={br._id}
           >
             <img src={urlFor(br.imgUrl)} alt={br.name} />

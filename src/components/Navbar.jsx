@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import { HiMenuAlt4, HiX } from "react-icons/hi"
+
 import { FaBars, FaRegWindowClose } from "react-icons/fa"
-import { AiOutlineBars } from "react-icons/ai"
+
 import { motion } from "framer-motion"
 
 import { images } from "../constants"
